@@ -1,0 +1,118 @@
+user:
+  users:
+    get_self: '/api/user/users/self/'
+    put_info: '/api/user/users/{ID}/info/'
+  organization:
+    get_company: '/api/authorize/company/'
+    put_organization: '/api/user/organization/v3/user_org_info/{ID}'
+  authorize:
+    post_company_token: '/api/authorize/v2/token/'
+  insdustrys:
+    get_industrys: '/api/user/industrys/'
+  permissions:
+    get_permissions: '/api/user/permissions/'
+  group_tree:
+    get_group_tree: '/api/user/group_tree/'
+    get_grouplevels: '/api/user/grouplevels/'
+    put_group_tree: '/api/user/v2/group_tree/'
+    post_upload_group_tree: '/api/user/groups/upload/'
+    get_down_groups_tree: '/api/user/groups/download/'
+  account:
+    get_users: '/api/user/users/'
+    get_down_users: '/api/user/users/download/'
+    get_down_template: '/api/user/users/template/'
+    post_upload_users: '/api/user/users/upload/'
+    post_send_active_email_many: '/api/user/users/v3/send_active_email_many/'
+    post_add_users: '/api/user/users/'
+    put_users: '/api/user/users/{ID}'
+  roles:
+    get_roles: '/api/user/roles/'
+    get_role_permissions: '/api/user/roles/{ID}/permissions/'
+    get_role_users: '/api/user/roles/{ID}/users/'
+    put_role_title: '/api/user/roles/{ID}'
+    put_role_permissions: '/api/user/roles/{ID}/permissions/'
+    get_role_can_add_users: '/api/user/users/role/{ID}'
+    put_role_users: '/api/user/users/role/{ID}'
+    delete_role: '/api/user/users/role/{ID}'
+  smtp:
+    get_smtps: '/api/user/smtps/'
+    put_smtps: '/api/user/smtps/{ID}'
+    delete_smtps: '/api/user/smtps/{ID}'
+    post_validate_smtps: '/api/user/smtps/validate/'
+    post_add_smtps: '/api/user/smtps/'
+  skin:
+    put_skin: '/api/user/organizations/{ID}/skin/'
+  notifysettings:
+    get_alert_notifysettings: '/api/alert/notifysettings/'
+    get_ticket_notifysettings: '/api/ticket/notifysettings/'
+    put_alert_notifysettings: '/api/alert/notifysettings/'
+    put_ticket_notifysettings: '/api/ticket/notifysettings/'
+  sms:
+    get_deliver_smstemplates: '/api/deliver/smstemplates/'
+    get_default_smstemplates: '/api/deliver/orgsmstemplates/'
+    get_sms_signature: '/api/deliver/balance/'
+    put_sms_signature: '/api/deliver/smsbalances/{ID}'
+    post_deliver_smstemplates: '/api/deliver/smstemplates/'
+    put_deliver_smstemplates: '/api/deliver/smstemplates/{ID}'
+    delete_deliver_smstemplates: '/api/deliver/smstemplates/{ID}'
+qdes:
+  folders:
+    get_folders: '/api/qdes/v3/projects/folders/'
+    put_folders: '/api/qdes/v3/projects/folders/'
+  projects:
+    put_move_project: '/api/qdes/v3/projects/{ID}/folder'
+    post_creat_project: '/api/qdes/v3/projects/'
+    delete_project: '/api/qdes/v3/projects/'
+    put_project: '/api/qdes/v3/projects/'
+    post_lib_creat_project: '/api/qdes/libprojects/qstruct/{ID}/'
+    post_copy_project: '/api/qdes/v3/projects/{ID}/copy/'
+    post_import_project: '/api/qdes/v3/projects/import/'
+    post_import_project_qstruct: '/api/qdes/v3/qstruct/{ID}/'
+    put_project_title: '/api/qdes/v3/projects/{ID}/title/'
+    get_project_list: '/api/qdes/v3/projects/'
+    post_project_release: '/api/qdes/projects/{ID}/release/'
+    get_project_share_users: '/api/qdes/v3/projects/{ID}/share/users/'
+    post_project_share: '/api/qdes/v3/projects/{ID}/share/'
+    get_project_share: '/api/qdes/v3/projects/{ID}/share/'
+    get_project_search_user: '/api/user/users/search-by-email/'
+openplatform:
+  authorize:
+    post_access_token: '/api/open/v1/auth/platform/'
+  organization:
+    post_open_creat_account: '/api/open/v2/organization/{ID}'
+    get_open_company_info: '/api/open/v2/organization/{ID}'
+    put_open_company_info: '/api/open/v2/organization/{ID}'
+    get_open_company_quota: '/api/open/v1/platform/organization/quota/{ID}'
+  user:
+    post_open_user_upload_group: '/api/open/v1/user/group/upload/'
+    get_open_user_group: '/api/open/v1/user/group/'
+    post_open_users: '/api/open/v1/user/users/'
+    post_open_user_group: '/api/open/user/sync/group_tree/'
+    get_open_users: '/api/open/v1/user/users/'
+  member:
+    post_open_tag_group: '/api/open/v1/member/tag_group/'
+    get_open_tag_group: '/api/open/v1/member/tag_group/'
+    post_open_import_member: '/api/open/v1/member/import/'
+    get_open_member_import_result: '/api/open/v1/member/import/'
+    post_open_creat_member_tag: '/api/open/v1/member/tag/'
+    get_open_member_tag: '/api/open/v1/member/tag/'
+  project:
+    post_open_creat_project: '/api/open/v1/qdes/'
+    put_open_project_edit: '/api/open/v1/qdes/'
+    get_open_project_list: '/api/open/v1/project/'
+    delete_open_project_list: '/api/open/v1/qdes/'
+    post_open_copy_project: '/api/open/v1/project/copy/'
+    post_open_project_data_export: '/api/open/v1/project/data/export/'
+    get_open_qdes_export_json: '/api/open/v1/qdes/surveydata/json/'
+    get_open_project_struct_json: '/api/open/v2/qdes/struct/json/'
+    get_open_project_gidmap: '/api/open/v1/qdes/struct/gidmap/'
+    get_open_project_summary: '/api/open/v1/project/survey/summary/'
+  deliver:
+    post_open_creat_deliver_third: '/api/open/v1/deliver/third/'
+  event:
+    post_open_event_subscribe: "/api/open/v1/event/subscribe/"
+
+
+
+
+

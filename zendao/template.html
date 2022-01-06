@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>month bug static</title>
+    <style>
+        .customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+
+        .customers td, .customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .customers tr:hover {
+            background-color: #ddd;
+        }
+
+        .customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<p>HI ALL：</p>
+<p> 倍市得系统{{time}}{{name}}禅道bug统计情况如下</p>
+<p>共创建bug： {{num}}</p>
+<p>已解决bug： {{solve_num}}</p>
+<p>未解决bug： {{active_num}}</p>
+<p><a href="https://docs.qq.com/sheet/DWE9YanN1RldPc1RL?tab=BB08J2">Bug详情文档</a></p>
+<p>人员Bug统计:</p>
+<table class="customers">
+    <tr>
+        <th>Bug指派人</th>
+        <th>测试环境bug (&lt严重）</th>
+        <th>测试环境bug (&gt=严重）</th>
+        <th>生产环境bug (&lt严重）</th>
+        <th>生产环境bug (&gt=严重）</th>
+<!--        <th>已解决</th>-->
+<!--        <th>未解决</th>-->
+<!--        <th>总数</th>-->
+    </tr>
+    {% for items in dever_data %}
+    <tr>
+        <td>{{ items.name }}</td>
+        <td>{{ items.other_lt_error }}</td>
+        <td>{{ items.other_gte_error }}</td>
+        <td>{{ items.master_lt_error }}</td>
+        <td>{{ items.master_gte_error }}</td>
+<!--        <td>{{ items.solve }}</td>-->
+<!--        <td>{{ items.active }}</td>-->
+<!--        <td>{{ items.total }}</td>-->
+    </tr>
+    {% endfor %}
+</table>
+<table class="customers">
+    <tr>
+        <th>测试人员名单</th>
+        <th>生产环境bug (&lt严重）</th>
+        <th>生产环境bug (&gt=严重）</th>
+    </tr>
+    {% for items in tester_data %}
+    <tr>
+        <td>{{ items.name }}</td>
+        <td>{{ items.lt_error }}</td>
+        <td>{{ items.gte_error }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

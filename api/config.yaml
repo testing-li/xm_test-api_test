@@ -1,0 +1,68 @@
+admin_user:
+  org_code: bvt
+  password: '1234567890'
+  user_name: superadmin
+email:
+  flag: 'false'
+  send_to:
+    - zongxiuxuan001@163.com
+  stmp_address: zongxiuxuan001@163.com
+  stmp_password: zxx190825
+  stmp_port: '25'
+  stmp_server: smtp.163.com
+env: release
+base_url:
+  master:
+    bestcem: https://bvt.bestcem.com
+    openplatform: https://autoopen.bestcem.com
+    openplatform_answer: https://rs0.bestcem.cn/prod
+  pre_release:
+    bestcem: https://bvt.xm-release.bestcem.com
+    openplatform: https://autoopen.xm-release.bestcem.com
+    openplatform_answer: https://rs0.bestcem.cn/pre
+  release:
+    bestcem: https://bvt.xm-test.bestcem.com
+    openplatform: https://autoopen.xm-test.bestcem.com
+    openplatform_answer: https://rs0.bestcem.cn/test
+log_level: INFO
+openplatform:
+  master:
+    aes_key: K807lyLe89EJ7za2654cVg141c912v56ZefX13u3e3K3Aj9dBZg447SGqGQ02595
+    default_survey_id: 60afabd9f9f4f600218e6d18
+    env_org_id: 5da91375aace70000900b375
+    org_id: 60afabd923124d000bc5eedd
+    platform_key: o6n223637533UXXwt7lsl2t72U24798xvlc53LY9RXa7o3l36Lzc74xj3Fk1tU71
+    secret_key: 95t1c96h98u8l520E8udaw2941bKL14kb5r191P2l42ZM7oy8P2eJu6K39jduX1s
+    plat_code: zxxapitest
+    app_id: 6115593eaace70000aa221a3
+    app_secret_key: 2xaKw4V3ER7GNT230kbj887233X4211z14a1l4ez3blALhxQ6491739yjep8N1a9
+    app_org_id: 5dbb997baace70000a09bb68
+  release:
+    aes_key: 3DhV7oFy17Ie3d2M12j1Ok3H426k4hA5zowq0V746q3q66Iv150B13zG3G2141UP
+    default_survey_id: 61373704c9bea3ca0a34561a
+    env_org_id: 5da91375aace70000900b375
+    org_id: 60ab6ba423124d000d106c2c
+    platform_key: H22mz2g00133vd17rT6Um33A46y4h6FY8LslwmAX118hL6b6224L511tvB7R0xR9
+    secret_key: r96Y5o004b55YJM30t7yW6x7Nu9ZA6oc02498E8cFR32jB35P6928k60njLvbUI9
+    plat_code: bestcem
+    app_id: 611483aa2737905635a3066f
+    app_secret_key: sVLCh3gI2rK9d28871z9m7o7P62067Hpac62108fu16088P9cS95zrXK5u35XUdE
+    app_org_id: 5fc8b996aace70000cb1ac2b
+  pre_release:
+    aes_key: 3DhV7oFy17Ie3d2M12j1Ok3H426k4hA5zowq0V746q3q66Iv150B13zG3G2141UP
+    default_survey_id: 60ab6ba4f9f4f6001e1421ac
+    env_org_id: 5da91375aace70000900b375
+    org_id: 60ab6ba423124d000d106c2c
+    platform_key: H22mz2g00133vd17rT6Um33A46y4h6FY8LslwmAX118hL6b6224L511tvB7R0xR9
+    secret_key: r96Y5o004b55YJM30t7yW6x7Nu9ZA6oc02498E8cFR32jB35P6928k60njLvbUI9
+    plat_code: bestcem
+    app_id: 611520b6aace7000093eaa51
+    app_secret_key: 4IRIg8pL584685E59P5ZGh02379Icv33Imc1d8085iJtJ1hKizV1v787C95s13PM
+    app_org_id: 5fc8b996aace70000cb1ac2b
+report_address:
+  host: 8884
+  ip: 127.0.0.1
+sub_user:
+  org_code: bvt
+  password: '1234567890'
+  user_name: test01

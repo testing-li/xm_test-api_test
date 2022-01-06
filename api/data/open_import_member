@@ -1,0 +1,28 @@
+success:
+  individual:
+    type: 0
+    members:
+      params: [name,gender,age,mobile,email,tags,import_no]
+      value:
+        -
+          - ["张三","女",18,"17839236545","test@idiaoyan.com","tabs_1","12345678"]
+          - ["张三","女",18,"17839236545","test@idiaoyan.com","tabs_1","12345678"]
+        -
+          - ["李四","女",18,"17839236545","test@idiaoyan.com","tabs_1","12345678"]
+          - ["李四","女",18,"17839236545","test@idiaoyan.com","tabs_1","12345678"]
+        -
+          - ["李四",'',18,None,"test@idiaoyan.com","tabs_1","12345678"]
+success2:
+  type: 0
+  members:
+    -
+      {
+        name: 张三,
+        age: 14
+      }
+    -
+      {
+        name: 李四,
+        age: 19
+      }
+
